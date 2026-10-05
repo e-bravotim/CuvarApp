@@ -1,4 +1,4 @@
-popravkapackage com.cuvar.bezbednost
+package com.cuvar.bezbednost
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
