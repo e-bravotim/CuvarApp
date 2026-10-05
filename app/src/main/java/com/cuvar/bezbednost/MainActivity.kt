@@ -1,4 +1,3 @@
-
 package com.cuvar.bezbednost
 
 import android.os.Bundle
