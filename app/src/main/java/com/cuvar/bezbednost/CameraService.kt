@@ -47,7 +47,7 @@ class CameraService : Service() {
             ContextCompat.getMainExecutor(this),
             object : ImageCapture.OnImageSavedCallback {
                 override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                    // Slika je kreirana
+                    TelegramSender().sendPhotoAndLocation(photoFile, 44.8176, 20.4633)
                 }
 
                 override fun onError(exc: ImageCaptureException) {
