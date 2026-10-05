@@ -1,32 +1,8 @@
-name: Build Android APK
+# CuvarApp
 
-on:
-  push:
-    branches: [ "main", "master" ]
-  workflow_dispatch:
+Aplikacija za ličnu bezbednost i automatsko zaključavanje Android uređaja.
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
-
-      - name: Build APK
-        run: ./gradlew assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+## Funkcionalnosti
+- Automatsko slanje SMS upozorenja sa GPS lokacijom definisanim kontaktima
+- Daljinsko i trenutno zaključavanje ekrana (Device Admin)
+- Tiho pravljenje fotografija i slanje dokaza
