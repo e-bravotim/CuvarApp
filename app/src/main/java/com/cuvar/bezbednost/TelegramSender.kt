@@ -1,7 +1,5 @@
 package com.cuvar.bezbednost
 
-package com.cuvar.bezbednost
-
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
@@ -10,8 +8,8 @@ import okhttp3.RequestBody.Companion.asRequestBody
 import java.io.File
 
 class TelegramSender(
-    private val botToken: String = "OVDE_STAVI_BOT_TOKEN",
-    private val chatId: String = "OVDE_STAVI_CHAT_ID"
+    private val botToken: String = "TEST_TOKEN",
+    private val chatId: String = "TEST_CHAT_ID"
 ) {
 
     private val client = OkHttpClient()
