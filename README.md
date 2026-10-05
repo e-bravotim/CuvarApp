@@ -1,4 +1,3 @@
-# CuvarApp
 name: Build Android APK
 
 on:
